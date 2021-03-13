@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddie </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+    <section class="section__one">
+        <nav class="navigations">
+            <div class="navigations__left">
+                <img src="img/woo_logo 1.png" alt="" srcset="">
+            </div>
+            <ul class="navigation">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Sell</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Marketplace</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Community</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Desktop</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Resources</a>
+                </li>
+
+            </ul>
+            <div class="navigations__right">
+                <a class="navigations__right-link">Login</a>
+                <button class="btn navigations__right-btn btn-pupple br-1">Get started</button>
+                <button>search</button>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="header-left">
+                <h1 class="heading-1">Building exactly the eCommerce website you want.</h1>
+                <p>WooCommerce is a customizable, open source eCommerce platform built on WordPress. Get started quickly and make your way.</p>
+                <div class="header-left__cto">
+                    <button class="btn btn-pupple header-left__cto-btn br-6">Start A New Store</button> or
+                    <a href="#">Customize & Extend</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <figure class="header-right__figure">
+                    <img src="" alt="" class="header-right__image">
+                </figure>
+                <figure class="header-right__figure">
+                    <img src="" alt="" class="header-right__image">
+                </figure>
+                <figure class="header-right__figure">
+                    <img src="" alt="" class="header-right__image">
+                </figure>
+                <figure class="header-right__figure">
+                    <img src="" alt="" class="header-right__image">
+                </figure>
+            </div>
+        </header>
+    </section>
+    <section class="section__two">
+        <h2>Your eCommerce made simple</h2>
+        <div class="inner">
+            <div class="card">
+                <figure class="card__figure">
+                    <img src="" alt="" class="card__img">
+                </figure>
+                <h3>All you Need to Start</h3>
+                <p>Add WooCommerce plugin to any WordPress site and setup a new store in minutes.</p>
+                <a href="#">Ecommerce for Wordpress</a>
+            </div>
+        </div>
+    </section>
+    <section class="section__three">
+        //TODO
+    </section>
+    <section class="section__four">
+        <p>WooCommerce - the most customizable eCommerce platform for building your online business.</p>
+        <button>GET STARTED</button>
+    </section>
+
+    <footer>
+        <div>
+            <h3 class="heading-4 mb-1">YARA</h3>
+            <p class="footer__description">Yara is an international fashion brand with the sole purpose of getting the user updated about fashion trends.</p>
+        </div>
+        <div>
+            <h3 class="heading-4 mb-1">Useful Links</h3>
+            <ul class="footer__navigation">
+                <li class="footer__navigation-item">
+                    <a href="#" class="footer__navigation-link">About</a>
+                </li>
+                <li class="footer__navigation-item">
+                    <a href="#" class="footer__navigation-link">Services</a>
+                </li>
+                <li class="footer__navigation-item">
+                    <a href="#" class="footer__navigation-link">Testimonial</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="heading-4 mb-1">Social Links</h3>
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <svg class="icon icon-facebook footer__social-link">
+                        <use xlink:href=" icomoon/sprite.svg#icon-facebook "></use>
+                    </svg>
+                </li>
+                <li class="footer__social-item">
+                    <svg class="icon icon-facebook footer__social-link">
+                        <use xlink:href=" icomoon/sprite.svg#icon-twitter "></use>
+                    </svg>
+                </li>
+                <li class="footer__social-item">
+                    <svg class="icon icon-facebook footer__social-link">
+                        <use xlink:href=" icomoon/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </li>
+                <li class="footer__social-item">
+                    <svg class="icon icon-facebook footer__social-link">
+                        <use xlink:href=" icomoon/sprite.svg#icon-youtube"></use>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        const menuButton = document.querySelector('.navigation__icon');
+        const mobileMenu = document.querySelector('#mobile');
+        const mobileIcon = document.querySelector('.mobile__icon');
+
+        function displayMenuItem() {
+
+            if (mobileMenu.style.display == "none ") {
+                mobileMenu.style.display = "block ";
+                mobileMenu.style.width = "100% ";
+            }
+        }
+
+        function hideMenuItem() {
+            if (mobileMenu.style.display == "block ") {
+                mobileMenu.style.display = "none ";
+                mobileMenu.style.width = "0px ";
+            }
+        }
+        menuButton.addEventListener('click', displayMenuItem);
+        mobileIcon.addEventListener('click', hideMenuItem);
+    </script>
+</body>
+
+</html>
