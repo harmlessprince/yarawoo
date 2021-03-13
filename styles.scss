@@ -76,9 +76,28 @@ footer {
     align-items: center;
     justify-items: center;
     justify-content: space-between;
+    margin-bottom: 10rem;
     &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &>* {
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+        }
         &-btn {
             padding: .75rem .65rem;
+        }
+        &-svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            fill: var(--color-black);
+        }
+        &-link {
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.1rem;
         }
     }
 }
@@ -108,10 +127,61 @@ footer {
 .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    &-left__cto {
-        &-btn {
-            padding: 1.4rem 3.3rem;
-            // padding: 2.8rem 6.5rem;
+    grid-column-gap: 5rem;
+    &-left {
+        &__cto {
+            &-btn {
+                padding: 1.4rem 3.3rem;
+                // padding: 2.8rem 6.5rem;
+            }
+        }
+        &__p {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            color: var(--color-grey-dark);
+            margin-bottom: 3.2rem;
+        }
+    }
+    &-right {
+        display: grid;
+        // height: 30rem;
+        grid-template-rows: repeat(10, 4rem);
+        grid-template-columns: repeat(10, 1fr);
+        grid-row-gap: 1rem;
+        &__figure {
+            border-radius: 2rem;
+            overflow: hidden;
+            &--1 {
+                // width: 14rem;
+                // height: 20rem;
+                grid-row: 1/4;
+                grid-column: 2/6;
+            }
+            &--2 {
+                // width: 14rem;
+                // height: 20rem;
+                grid-row: 4/7;
+                grid-column: 1/5;
+            }
+            &--3 {
+                // width: 14rem;
+                // height: 20rem;
+                grid-row: 7/10;
+                grid-column: 2/7;
+                z-index: 30;
+            }
+            &--4 {
+                // width: 36rem;
+                // height: 100%;
+                grid-row: 2/9;
+                grid-column: 6/-1;
+            }
+        }
+        &__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
     }
 }
@@ -201,6 +271,7 @@ footer {
     font-size: 5rem;
     font-weight: bold;
     line-height: 6rem;
+    margin-bottom: 3.3rem;
     color: var(--color-black);
     // width: 78rem;
 }

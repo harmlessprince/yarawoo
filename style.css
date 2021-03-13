@@ -53,9 +53,24 @@ footer {
   display: flex;
   align-items: center;
   justify-items: center;
-  justify-content: space-between; }
-  .navigations__right-btn {
-    padding: .75rem .65rem; }
+  justify-content: space-between;
+  margin-bottom: 10rem; }
+  .navigations__right {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .navigations__right > *:not(:last-child) {
+      margin-right: 1.5rem; }
+    .navigations__right-btn {
+      padding: .75rem .65rem; }
+    .navigations__right-svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: var(--color-black); }
+    .navigations__right-link {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 2.1rem; }
 
 .navigation {
   display: flex;
@@ -72,9 +87,41 @@ footer {
 
 .header {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem; }
   .header-left__cto-btn {
     padding: 1.4rem 3.3rem; }
+  .header-left__p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: var(--color-grey-dark);
+    margin-bottom: 3.2rem; }
+  .header-right {
+    display: grid;
+    grid-template-rows: repeat(10, 4rem);
+    grid-template-columns: repeat(10, 1fr);
+    grid-row-gap: 1rem; }
+    .header-right__figure {
+      border-radius: 2rem;
+      overflow: hidden; }
+      .header-right__figure--1 {
+        grid-row: 1/4;
+        grid-column: 2/6; }
+      .header-right__figure--2 {
+        grid-row: 4/7;
+        grid-column: 1/5; }
+      .header-right__figure--3 {
+        grid-row: 7/10;
+        grid-column: 2/7;
+        z-index: 30; }
+      .header-right__figure--4 {
+        grid-row: 2/9;
+        grid-column: 6/-1; }
+    .header-right__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
 
 .footer__navigation {
   list-style: none; }
@@ -139,6 +186,7 @@ footer {
   font-size: 5rem;
   font-weight: bold;
   line-height: 6rem;
+  margin-bottom: 3.3rem;
   color: var(--color-black); }
 
 .heading-2 {
