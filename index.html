@@ -48,8 +48,13 @@
                 <h1 class="heading-1">Building exactly the eCommerce website you want.</h1>
                 <p class="header-left__p">WooCommerce is a customizable, open source eCommerce platform built on WordPress. Get started quickly and make your way.</p>
                 <div class="header-left__cto">
-                    <button class="btn btn-pupple header-left__cto-btn br-6">Start A New Store</button> or
-                    <a href="#">Customize & Extend</a>
+                    <button class="btn btn-pupple header-left__cto-btn br-6">Start A New Store</button> <span>or</span>
+                    <a href="#" class="inline-cto">
+                        Ecommerce for Wordpress
+                        <svg class="icon icon-facebook inline-cto__svg">
+                            <use xlink:href=" icomoon/sprite.svg#icon-angle-right"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="header-right">
@@ -69,15 +74,50 @@
         </header>
     </section>
     <section class="section__two">
-        <h2>Your eCommerce made simple</h2>
-        <div class="inner">
-            <div class="card">
+        <h2 class="heading-2 align-center mb-ten">Your eCommerce <br> made simple</h2>
+        <div class="section__two--inner">
+            <div class="card ">
                 <figure class="card__figure">
-                    <img src="" alt="" class="card__img">
+                    <img src="img/pic 7.jpg" alt="" class="card__img">
                 </figure>
-                <h3>All you Need to Start</h3>
-                <p>Add WooCommerce plugin to any WordPress site and setup a new store in minutes.</p>
-                <a href="#">Ecommerce for Wordpress</a>
+                <h3 class="card__title">All you Need to Start</h3>
+                <p class="card__description">Add WooCommerce plugin to any WordPress site and setup a new store in minutes.</p>
+                <a href="#" class="inline-cto mt-2">
+                    Ecommerce for Wordpress
+                    <svg class="icon icon-facebook inline-cto__svg">
+                        <use xlink:href=" icomoon/sprite.svg#icon-angle-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="card tr-1">
+                <figure class="card__figure">
+                    <img src="img/pic 6.jpg" alt="" class="card__img">
+                </figure>
+                <h3 class="card__title">All you Need to Start</h3>
+                <p class="card__description">
+                    From subscriptions to gym classes to luxury cars, WooCommerce is fully customizable.
+                </p>
+                <a href="#" class="inline-cto mt-2">
+                    Browse Extensions
+                    <svg class="icon icon-facebook inline-cto__svg">
+                        <use xlink:href=" icomoon/sprite.svg#icon-angle-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="card tr-2">
+                <figure class="card__figure">
+                    <img src="img/pic 5.jpg" alt="" class="card__img">
+                </figure>
+                <h3 class="card__title">All you Need to Start</h3>
+                <p class="card__description">
+                    WooCommerce is one of the fastest growing eCommerce communities.
+                </p>
+                <a href="#" class="inline-cto mt-2">
+                    Check our Forums
+                    <svg class="icon icon-facebook inline-cto__svg">
+                        <use xlink:href=" icomoon/sprite.svg#icon-angle-right"></use>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
@@ -141,26 +181,26 @@
         </div>
     </footer>
     <script>
-        const menuButton = document.querySelector('.navigation__icon');
-        const mobileMenu = document.querySelector('#mobile');
-        const mobileIcon = document.querySelector('.mobile__icon');
+        // const menuButton = document.querySelector('.navigation__icon');
+        // const mobileMenu = document.querySelector('#mobile');
+        // const mobileIcon = document.querySelector('.mobile__icon');
 
-        function displayMenuItem() {
+        // function displayMenuItem() {
 
-            if (mobileMenu.style.display == "none ") {
-                mobileMenu.style.display = "block ";
-                mobileMenu.style.width = "100% ";
-            }
-        }
+        //     if (mobileMenu.style.display == "none ") {
+        //         mobileMenu.style.display = "block ";
+        //         mobileMenu.style.width = "100% ";
+        //     }
+        // }
 
-        function hideMenuItem() {
-            if (mobileMenu.style.display == "block ") {
-                mobileMenu.style.display = "none ";
-                mobileMenu.style.width = "0px ";
-            }
-        }
-        menuButton.addEventListener('click', displayMenuItem);
-        mobileIcon.addEventListener('click', hideMenuItem);
+        // function hideMenuItem() {
+        //     if (mobileMenu.style.display == "block ") {
+        //         mobileMenu.style.display = "none ";
+        //         mobileMenu.style.width = "0px ";
+        //     }
+        // }
+        // menuButton.addEventListener('click', displayMenuItem);
+        // mobileIcon.addEventListener('click', hideMenuItem);
     </script>
 </body>
 
